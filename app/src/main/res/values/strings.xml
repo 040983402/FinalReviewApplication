@@ -2,4 +2,7 @@
     <string name="app_name">FinalReviewApplication</string>
     <string name="new_button">newButtom</string>
     <string name="HelloWorld">Hello World!</string>
+    <string name="editmessage">I\'m an EditText</string>
+    <string name="hello_message">hello world</string>
+    <string name="button_message">button_message</string>
 </resources>
