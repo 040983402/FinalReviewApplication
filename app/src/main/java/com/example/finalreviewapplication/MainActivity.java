@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         myCheck.setOnCheckedChangeListener((buttonView, isChecked) -> {
             Context context = getApplicationContext();
             CharSequence text = "Nice Choice!";
-            int duration = Toast.LENGTH_LONG;
+            int duration = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(context,text,duration);
             toast.show();
@@ -42,6 +46,43 @@ public class MainActivity extends AppCompatActivity {
 
             Toast toast = Toast.makeText(context,text,duration);
             toast.show();
+        });
+
+        Switch myswitch = findViewById(R.id.myswitch);
+        myswitch.setOnCheckedChangeListener((switchView,isChecked) ->{
+            Context context = getApplicationContext();
+            CharSequence text = "Turn on the light!";
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(context,text,duration);
+            toast.show();
+        });
+
+        RadioButton myRadioBut = findViewById(R.id.myradiobutton);
+        myRadioBut.setOnCheckedChangeListener((v,isChecked) ->{
+            Context context = getApplicationContext();
+            CharSequence text = "I like walk!";
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(context,text,duration);
+            toast.show();
+        });
+
+        RadioButton myRadioBut2 = findViewById(R.id.myradiobutton2);
+        myRadioBut2.setOnCheckedChangeListener((v,isChecked) ->{
+            Context context = getApplicationContext();
+            CharSequence text = "I like drive!";
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(context,text,duration);
+            toast.show();
+        });
+
+
+        ImageButton imageButton = findViewById(R.id.myImageButton);
+
+        imageButton.setOnClickListener((m) ->{
+            int width = imageButton.getWidth();
+            int height = imageButton.getHeight();
+            Toast.makeText(getApplicationContext(),"The width = " + width + " and height = " + height,
+                    Toast.LENGTH_LONG).show();
         });
 
 

@@ -35,7 +35,7 @@
         android:text="Do you like coffee"/>
 
     <Switch
-        android:text="I'm a switch"
+        android:text="Tuan on the light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/myswitch"/>
